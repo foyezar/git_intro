@@ -43,6 +43,6 @@ master branch
 ## Pushing to Github
 * Creating a repo on github
 * Using ssh key, e.g. c9: git remote add origin git@github.com:foyezar/repo_name.git - Adding a remote connection
-* Using laptop or destop: git remote add origin https://github.com/foyezar/repo_name.git - Adding a remote connection
+* Using laptop or destop: git remote add githubRepo https://github.com/foyezar/repo_name.git - Adding a remote connection
 * git remote -v - check remote connection
 * git push -u origin master - Pushing to github
