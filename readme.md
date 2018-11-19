@@ -6,21 +6,25 @@
 3. Git Repository - Where all our snapshots are stored
 
 ## Git Basics
-* git init
-* git status
-* ls -a - shows files & directories including hidden
-* git add <file>
-* git add . - add all files & folders
-* git add -A - adds all files & folders
-* git add *.js - add multiple files of a certain type
-* git reset <file> - undo a git add file befor commit
-* git commit -m "message"
+```
+$ git init
+$ git status
+$ ls -a - shows files & directories including hidden
+$ git add <file>
+$ git add . - add all files & folders
+$ git add *.js - add multiple files of a certain type
+$ git reset <file> - undo a git add file befor commit
+$ git commit -m "message"
+$ git commit -a -m "message" - commit modified files without add
+```
 * .gitignore - ignore files & folders
 
 ## Git Checkout
-* git log - shows git history
-* git checkout commit-id - changes to that commit
-* git revert --no-commit 0766c053..HEAD
+```
+$ git log - shows git history
+$ git checkout commit-id - changes to that commit
+$ git revert --no-commit 0766c053..HEAD
+```
 
 ## Git Branches
 ```
@@ -30,15 +34,54 @@
 0----0----0----0---------0   
 master branch
 ```
-* git branch - listing all branches
-* git checkout -b branch_name - adding a branch
-* git checkout branch_name - changing branches
-* git merge branch_name
-* git branch -d branch_name - remove a branch
+```
+$ git branch - listing all branches
+$ git checkout -b branch_name - adding a branch
+$ git checkout branch_name - changing branches
+$ git merge branch_name
+$ git branch -d branch_name - remove a branch
+```
 
 ## Cloning and Github Intro
 * What is Github?
 * clone github_url - Cloning an existing repo
+
+## SSH KEY
+### Checking for an existing SSH key
+```
+$ ls -al ~/.ssh
+```
+### Generating a new SSH key
+```
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+### Adding the SSH key to the ssh-agent
+```
+# start the ssh-agent in the background
+$ eval $(ssh-agent -s)
+
+# add the ssh key to the ssh-agent
+$ ssh-add ~/.ssh/id_rsa
+```
+### Adding a new SSH key to GitHub account
+```
+$ clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+```
+### Testing SSH key connection
+```
+$ ssh -T git@github.com
+```
+### Custom configuration of ssh
+```
+$ code ~/.ssh/config
+# open config file in VS Code
+
+Then add this:
+Host github.com
+  Hostname ssh.github.com
+  Port 443
+```
 
 ## Pushing to Github
 * Creating a repo on github
