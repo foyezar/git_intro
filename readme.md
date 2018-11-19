@@ -86,7 +86,7 @@ Host github.com
 ## Pushing to Github
 * Creating a repo on github
 * Using ssh key, e.g. c9: git remote add origin git@github.com:foyezar/repo_name.git - Adding a remote 
-* Using laptop or destop: git remote add githubRepo https://github.com/foyezar/repo_name.git - Adding a remote
+* Using laptop or destop: git remote add origin https://github.com/foyezar/repo_name.git - Adding a remote
 * git remote -v - check remote connection
 * git remote rm remote_name - remove a remote
 * git push -u origin master - Pushing to github
