@@ -24,6 +24,7 @@ $ git commit --amend --no-edit - Add files with last commit
 ```
 $ git log - shows git history
 $ git checkout commit-id - changes to that commit
+$ git checkout -- <file> - discard changes in working directory
 $ git revert --no-commit 0766c053..HEAD
 ```
 
