@@ -15,7 +15,8 @@ $ git add . - add all files & folders
 $ git add *.js - add multiple files of a certain type
 $ git reset <file> - undo a git add file befor commit
 $ git commit -m "message"
-$ git commit -a -m "message" - commit modified files without add
+$ git commit -am "message" - commit modified files without add
+$ git commit --amend --no-edit - Add files with last commit
 ```
 * .gitignore - ignore files & folders
 
