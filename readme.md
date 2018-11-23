@@ -14,6 +14,8 @@ $ git add <file>
 $ git add . - add all files & folders
 $ git add *.js - add multiple files of a certain type
 $ git reset <file> - undo a git add file befor commit
+$ git checkout -- <file> - discard changes in working directory
+$ git diff - show changes
 $ git commit -m "message"
 $ git commit -am "message" - commit modified files without add
 $ git commit --amend --no-edit - Add files with last commit
@@ -24,7 +26,6 @@ $ git commit --amend --no-edit - Add files with last commit
 ```
 $ git log - shows git history
 $ git checkout commit-id - changes to that commit
-$ git checkout -- <file> - discard changes in working directory
 $ git revert --no-commit 0766c053..HEAD
 ```
 
