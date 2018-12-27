@@ -15,6 +15,7 @@ $ git add . - add all files & folders
 $ git add *.js - add multiple files of a certain type
 $ git reset <file> - undo a git add file befor commit
 $ git checkout -- <file> - discard changes in working directory
+$ git checkout -- . - discard all changes
 $ git diff - show changes
 $ git commit -m "message"
 $ git commit -am "message" - commit modified files without add
@@ -43,6 +44,14 @@ $ git checkout -b branch_name - adding a branch
 $ git checkout branch_name - changing branches
 $ git merge branch_name
 $ git branch -d branch_name - remove a branch
+$ git branch -m <oldname> <newname> - rename 
+$ git branch -m <newname> - rename current branch name
+```
+
+## Git Remote 
+```
+$ git remote -v - check the git remote version
+$ git remote set-url origin <url>
 ```
 
 ## Cloning and Github Intro
